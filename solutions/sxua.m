@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Unteleported. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <objc/Object.h>
 
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
