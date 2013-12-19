@@ -21,7 +21,12 @@ class Solution
         `gcc #{c} -o #{c}.out && chmod +x #{c}.out`
         @all << new("#{c}.out")
       end
-      
+
+      Dir.glob("./solutions/*.m").each do |c|
+        `gcc -lobjc -Wall #{c} -o #{c}.out && chmod +x #{c}.out`
+        @all << new("#{c}.out")
+      end
+
       @all
     end
     
