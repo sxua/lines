@@ -1,3 +1,6 @@
+before_install:
+ - sudo apt-get update -qq
+ - sudo apt-get install -qq gobjc
 script: "ruby tests.rb"
 rvm:
   - 2.0.0
